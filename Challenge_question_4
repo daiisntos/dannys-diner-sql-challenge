@@ -1,0 +1,10 @@
+--Qual é o item mais pedido do cardápio e quantas vezes ele foi comprado por todos os clientes?
+
+
+SELECT product_id,
+COUNT(*) AS quantidade
+
+FROM sales
+
+GROUP BY product_id
+ORDER BY quantidade DESC;
