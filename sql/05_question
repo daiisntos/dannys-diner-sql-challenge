@@ -1,0 +1,22 @@
+-- 5. Which item was the most popular for each customer?
+
+SELECT *
+FROM (
+SELECT  sales.customer_id,
+		menu.product_id,
+		menu.product_name,
+		COUNT(*) AS quantidades,
+        RANK() OVER (
+   		PARTITION BY sales.customer_id
+  		ORDER BY COUNT(*) DESC
+) AS ranking
+FROM sales
+JOIN menu
+ON sales.product_id = menu.product_id
+
+GROUP BY sales.customer_id,
+menu.product_name,
+menu.product_id
+) AS resultado
+WHERE ranking = 1;
+
