@@ -1,0 +1,14 @@
+--6. Which item was purchased first by the customer after they became a member?
+
+
+SELECT
+	menu.price,
+	members.join_date,
+	sales.customer_id,
+    sales.order_date
+FROM sales
+JOIN members
+	ON sales.customer_id = members.customer_id
+JOIN menu
+	ON sales.product_id = menu.product_id
+WHERE sales.order_date < members.join_date;
