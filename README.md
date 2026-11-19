@@ -39,8 +39,8 @@ The challenge contains 10 business questions. My progress so far:
 | 2 | How many days has each customer visited the restaurant? | ✅ Completed |
 | 3 | What was the first item from the menu purchased by each customer? | ✅ Completed |
 | 4 | What is the most purchased item on the menu? | ✅ Completed |
-| 5 | Which item was the most popular for each customer? | ⏳ Pending |
-| 6 | Which item was purchased first after becoming a member? | ⏳ Pending |
+| 5 | Which item was the most popular for each customer? |  ✅ Completed  |
+| 6 | Which item was purchased first after becoming a member? |  ✅ Completed  |
 | 7 | Which item was purchased just before becoming a member? | ⏳ Pending |
 | 8 | What are the total items and amount spent before membership? | ⏳ Pending |
 | 9 | How many loyalty points would each customer have? | ⏳ Pending |
